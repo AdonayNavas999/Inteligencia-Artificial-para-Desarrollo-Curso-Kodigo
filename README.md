@@ -1,1 +1,1 @@
-# Inteligencia-Artificial-para-Desarrollo-Curso-Kodigo
+# Inteligencia Artificial para el Desarrollo
