@@ -1,0 +1,10 @@
+[INFO] 2024-10-15 El servicio se inició correctamente.
+[WARNING] 2024-10-15 El uso de memoria superó el 85%.
+[ERROR] 2024-10-15 No se pudo conectar a la base de datos MySQL.
+Línea corrupta sin formato alguno ni corchetes
+[INFO] 16/10/2023 Fecha en formato inválido DD/MM/YYYY
+[DEBUG] 2024-10-16 Nivel DEBUG no permitido por regla estricta
+[ERROR] 2024-10-16 Tiempo de espera agotado al conectar a API externa.
+[CRITICAL] 2024-10-17 Nivel CRITICAL no permitido por regla estricta
+[WARNING] 2024-10-17 El disco principal está casi lleno.
+[INFO] 2024-10-17 Tarea programada finalizada con éxito.

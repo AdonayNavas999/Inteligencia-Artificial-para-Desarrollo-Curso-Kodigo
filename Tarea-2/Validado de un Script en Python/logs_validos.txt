@@ -1,0 +1,8 @@
+[INFO] 2024-10-15 Servidor web iniciado en el puerto 8080.
+[INFO] 2024-10-15 Conexión establecida con la base de datos PostgreSQL.
+[WARNING] 2024-10-15 Tiempo de respuesta elevado en /api/v1/users (1.2s).
+[INFO] 2024-10-16 Sesión iniciada por usuario admin.
+[ERROR] 2024-10-16 Error de autenticación para usuario invitado.
+[WARNING] 2024-10-16 Espacio en disco al 82% en /var/log.
+[INFO] 2024-10-17 Copia de seguridad diaria completada exitosamente.
+[ERROR] 2024-10-17 Fallo al enviar correo electrónico de notificación.
