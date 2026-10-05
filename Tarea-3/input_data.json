@@ -1,0 +1,42 @@
+[
+  {
+    "id": "TX_A_101",
+    "amount": "150.75",
+    "currency": "USD",
+    "timestamp": "2026-10-01 14:30:00",
+    "status": "completed"
+  },
+  {
+    "transaction_id": "TX_B_202",
+    "total": 25000,
+    "currency_code": "eur",
+    "created_at": "02/10/2026 09:15",
+    "state": "OK"
+  },
+  {
+    "ref": "TX_C_303",
+    "amount": "£89.99",
+    "date": "2026-10-03T18:45:00Z",
+    "result": "success"
+  },
+  {
+    "id": "TX_INV_001",
+    "amount": "-50.00",
+    "currency": "USD",
+    "timestamp": "2026-10-01 10:00:00",
+    "status": "completed"
+  },
+  {
+    "transaction_id": "TX_INV_002",
+    "total": 12000,
+    "currency_code": "JPY",
+    "created_at": "01/10/2026 12:00",
+    "state": "OK"
+  },
+  {
+    "ref": "TX_INV_003",
+    "amount": "€100,00",
+    "date": "fecha-invalid-2026",
+    "result": "error"
+  }
+]
