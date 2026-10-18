@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><title>Horario de Clases | Academia Monstruo</title><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#e9ddff","tertiary-fixed":"#e8ddff","on-primary-container":"#340080","on-secondary-fixed-variant":"#304f00","outline":"#958ea0","surface-container-low":"#1e1a23","outline-variant":"#494454","secondary-fixed-dim":"#91db2a","inverse-on-surface":"#332e38","primary-fixed-dim":"#d0bcff","error":"#ffb4ab","on-tertiary-fixed-variant":"#4f319c","inverse-surface":"#e8dfed","surface-container-highest":"#38333d","secondary":"#94de2d","on-tertiary":"#381385","error-container":"#93000a","on-primary-fixed-variant":"#5516be","on-secondary":"#1f3700","on-error-container":"#ffdad6","secondary-fixed":"#acf847","surface":"#16121b","primary":"#d0bcff","inverse-primary":"#6d3bd7","surface-container":"#221e27","surface-bright":"#3c3741","on-primary":"#3c0091","surface-variant":"#38333d","tertiary-container":"#9b7fed","on-surface":"#e8dfed","on-surface-variant":"#cbc3d7","tertiary-fixed-dim":"#cebdff","on-tertiary-fixed":"#21005e","on-tertiary-container":"#31057e","tertiary":"#cebdff","surface-container-lowest":"#100d15","secondary-container":"#7ac100","on-secondary-fixed":"#102000","on-primary-fixed":"#23005c","on-secondary-container":"#2c4900","primary-container":"#a078ff","on-error":"#690005","surface-container-high":"#2d2832","on-background":"#e8dfed","surface-dim":"#16121b","surface-tint":"#d0bcff","background":"#16121b"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1.5rem","gutter-sm":"1rem","space-3xl":"4.5rem","gutter":"1.5rem","space-xl":"2rem","margin":"2rem","space-md":"1rem","space-2xl":"3rem","space-xs":"0.25rem","margin-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"headline-md":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"]},fontSize:{"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"700"}],"display-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.015em","fontWeight":"800"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"600"}],"display":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface relative min-h-screen selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden"><div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[36rem] h-[36rem] rounded-full bg-primary-container/15 blur-[120px]"></div><div class="absolute top-1/3 -right-24 w-[28rem] h-[28rem] rounded-full bg-secondary-container/10 blur-[100px]"></div><div class="absolute -bottom-24 left-1/3 w-[32rem] h-[32rem] rounded-full bg-tertiary-container/10 blur-[120px]"></div></div><header class="fixed top-0 w-full z-50 bg-surface/75 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.5)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="perfil-del-estudiante" href="../index.html"><img alt="Academia Monstruo Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFDfOuTG3ekluKT42azChYoCEMYO5B5dDv4rpi3D3JG_WThhz-D05vUq4l_4ZAZcuJL8vZ6Y6SSbKz1JeWYVZKwVY_7l_57ibuHCZzSP2ipG4zmS5CJVoYuADuufvOB1hcTK7k27xiKmJQ5IV0QOnzcnkFuCi5JUg3MUQgWj1mzCnUpBB6btueB1aH3WiEe5GkJp9CRtbrN0vV6kfu1ZYlDqCQ41fLvo65NBKXyor3I1EvIOwq7QuAVw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">Academia Monstruo</span><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Portal del Estudiante</span></div></a><div class="hidden xl:flex items-center px-space-sm py-space-xs rounded-full bg-surface-container/60"><span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Semestre Otoño-Invierno 2024</span></div></div><nav class="flex flex-wrap items-center gap-space-xs bg-surface-container-low/70 px-space-xs py-space-xs rounded-full shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.06)]"><a class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all duration-200" href="../index.html">Portada</a><a aria-current="page" class="font-label-lg px-space-md py-space-sm rounded-full transition-all duration-200 bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(160,120,255,0.35)]" href="horario-clases.html">Horario de Clases</a><a class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all duration-200" href="perfil-estudiante.html">Perfil del Estudiante</a><a class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all duration-200" href="boleta-calificaciones.html">Boleta de Calificaciones</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface font-semibold">Gargolín Ramírez</span><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider flex items-center justify-end gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>Activo • Nivel 4</span></div><div class="relative p-0.5 rounded-full bg-gradient-to-tr from-primary via-surface-variant to-secondary shadow-[0_0_14px_rgba(148,222,45,0.25)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwdXNvl7-QIKCk65PVuiExHlTvaK3VpOng2JN_gFDd03EAuKPp6f8ccjyC3g-OkpscqYotAA25FgXkUC-e_hlSlXuC2LPQ3RUqgjdqNxcUfFoKITV8OW2B7YRiCpHcm8B74RyqJ2MOSjG8V9c1gHCPB8ceFa5MAJ0JwndaA0y-VJHwcNK0Q7YYRYl-PvEC7gV2_fp1cr4veDYaohZIq37s5vVQOUWoXvk6ymEOEa_46zc3boXsSIYtoQ"/></div></div></div></header><main class="w-full pt-20 bg-transparent min-h-[calc(100vh-140px)]"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Academic Status & Quick Actions Bar -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md p-space-lg rounded-xl bg-surface-container/60 backdrop-blur-2xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.55)] relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-1 z-10">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps px-2.5 py-1 rounded-full bg-secondary-fixed/15 text-secondary-fixed tracking-widest uppercase">Semestre Activo 2024-II</span>
+<span class="font-label-caps text-label-caps px-2.5 py-1 rounded-full bg-surface-container-highest/80 text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">auto_stories</span>
+          Carga: 22 Créditos Malditos
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1 flex items-center gap-space-sm">
+        Horario Semanal de Clases
+        <span class="material-symbols-outlined text-secondary text-2xl animate-pulse">crisis_alert</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Planificación académica arcanotécnica para la cohorte de <strong class="text-on-surface">Artes Sombrías y Mutación Espectral</strong>.
+      </p>
+</div>
+<!-- Quick Stats Bento Capsule -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest/80 p-space-sm rounded-lg backdrop-blur-md self-stretch md:self-auto justify-around md:justify-start z-10">
+<div class="flex flex-col items-center px-space-sm">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold leading-none">05</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">Materias Hoy</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex flex-col items-center px-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold leading-none">01</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">En Vivo</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex flex-col items-center px-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-none">94%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">Mana Vital</span>
+</div>
+</div>
+</div>
+<!-- Interactive Controls: Days Picker & Filter Chips -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Days of the Week Pill Navigation -->
+<div class="flex items-center gap-space-xs p-1.5 rounded-full bg-surface-container-low/80 backdrop-blur-xl overflow-x-auto shadow-inner" id="day-selector">
+<button class="day-btn font-label-lg text-label-lg px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(160,120,255,0.4)] flex items-center gap-space-xs transition-all duration-200" data-day="lunes" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+        Lunes
+      </button>
+<button class="day-btn font-label-lg text-label-lg px-space-lg py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest/60 transition-all duration-200" data-day="martes" type="button">
+        Martes
+      </button>
+<button class="day-btn font-label-lg text-label-lg px-space-lg py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest/60 transition-all duration-200" data-day="miercoles" type="button">
+        Miércoles
+      </button>
+<button class="day-btn font-label-lg text-label-lg px-space-lg py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest/60 transition-all duration-200" data-day="jueves" type="button">
+        Jueves
+      </button>
+<button class="day-btn font-label-lg text-label-lg px-space-lg py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest/60 transition-all duration-200" data-day="viernes" type="button">
+        Viernes
+      </button>
+</div>
+<!-- Quick State Filter Buttons -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto overflow-x-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mr-1 hidden sm:inline">Filtrar por:</span>
+<button class="filter-pill font-label-md text-label-md px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface shadow-sm transition-all flex items-center gap-1 active-filter" onclick="filterClasses('all', this)" type="button">
+<span class="material-symbols-outlined text-sm">density_medium</span>
+        Todas (5)
+      </button>
+<button class="filter-pill font-label-md text-label-md px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="filterClasses('en-curso', this)" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+        En Curso (1)
+      </button>
+<button class="filter-pill font-label-md text-label-md px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="filterClasses('proximas', this)" type="button">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+        Próximas (3)
+      </button>
+<button class="filter-pill font-label-md text-label-md px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="filterClasses('inactiva', this)" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+        Tarde / Inactiva (1)
+      </button>
+</div>
+</div>
+<!-- Bento Schedule Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg w-full">
+<!-- Card 1: Sustos 101 (Featured Live Class - 8 Cols) -->
+<article class="schedule-card lg:col-span-8 group relative rounded-xl bg-surface-container/70 backdrop-blur-2xl shadow-[0_16px_48px_-8px_rgba(0,0,0,0.65)] hover:shadow-[0_20px_54px_-4px_rgba(148,222,45,0.2)] transition-all duration-300 overflow-hidden flex flex-col justify-between" data-status="en-curso">
+<!-- Glow ambient backdrop accents -->
+<div class="absolute -top-16 -right-16 w-56 h-56 bg-secondary/15 rounded-full blur-3xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary-fixed via-primary-container to-secondary"></div>
+<div class="p-space-xl flex flex-col gap-space-md relative z-10">
+<!-- Top Status Bar & Time -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-secondary-fixed font-label-caps text-label-caps uppercase shadow-[0_0_12px_rgba(148,222,45,0.4)]">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+              En Curso • Transmisión Activa
+            </span>
+<span class="font-label-caps text-label-caps px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant uppercase tracking-wider">
+              Nivel Troncal
+            </span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary-fixed font-label-lg text-label-lg bg-surface-container-lowest/80 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-base">schedule</span>
+            08:00 - 10:00 AM (Quedan 38 min)
+          </div>
+</div>
+<!-- Title & Teacher Bento Split -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center">
+<div class="md:col-span-7 flex flex-col gap-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-primary transition-colors flex items-center gap-2">
+              Sustos 101
+              <span class="material-symbols-outlined text-secondary text-2xl" title="Materia Obligatoria">verified</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Técnicas avanzadas de espanto nocturno y rugido gutural. Modulación de frecuencias subsónicas y dilatación de pupilas intimidatoria en sombras de ángulo cerrado.
+            </p>
+<div class="flex items-center gap-space-md mt-space-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">castle</span>
+<span>Aula: <strong class="text-on-surface font-semibold">Torre Gótica B-302</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-lg">group</span>
+<span>Cupo: <strong class="text-secondary-fixed font-semibold">32/34 Monstruos</strong></span>
+</div>
+</div>
+</div>
+<!-- Professor Profile Cardlet -->
+<div class="md:col-span-5 rounded-lg bg-surface-container-low/90 p-space-md flex items-center gap-space-md shadow-inner">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-[0_0_14px_rgba(208,188,255,0.35)]" data-alt="Dark dramatic close-up portrait of Professor Dracula Shadow with sleek pointed features, glowing crimson eyes, wearing high gothic velvet collar and ethereal purple luminescence against ancient stone ruins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUSkVcA8UAJOXgfnDX9qWQXaW79eMcrRGr3ewN2_8UkIWgD57XTFfLdT4giy09dSo4S06qeQiPop580mhWkzSctFxk4foQRWLi0jmto9RM0OWEAdHPR_9OfMislr04qeT3QKDJ6pxlij7ngqtsc7Vet0seZS57GuNXlnGoNzQJZFFubWf-XWePRc-yN7Hv490EXL97LDZQlc3xLY1Gz0agi0bLcQVl0bnxLe23TKu9piemECASOp4_kA"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary-fixed flex items-center justify-center text-[10px] text-on-secondary font-bold">✓</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-primary uppercase">Catedrático Titular</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Prof. Drácula Sombra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Doctor en Pánico Clásico</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bar with Class Mates & Action Triggers -->
+<div class="px-space-xl py-space-md bg-surface-container-lowest/80 backdrop-blur-md flex flex-wrap items-center justify-between gap-space-md">
+<!-- Monster Classmates Avatars Stack -->
+<div class="flex items-center gap-space-sm">
+<div class="flex -space-x-3 overflow-hidden">
+<img alt="Compañero 1" class="inline-block h-8 w-8 rounded-full shadow-md object-cover" data-alt="Cute green blob creature with neon yellow eyes wearing tiny spectacles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWzogkknTJ3l6XPZqiWPqmwJrxp2FMfUorcdGeZd-c4Udb6LENrkmDaxspL5iRELWKhKUjSRZUpsFtVM9wyG8nm-sZdIc5EUB4fcGgN58TMypK9aSJ9J3x25coFhiOtcQUN0N45bNUygs-oydhDjIVlah96F0EPNBS3ANqV_0xMrFkq0fgJqVG_2J4E3S76sfSHgy16Rjj3yBmE2hMfCCO6CyW9I-cYDut-ANCRZiCBl_icP2xGgwDFQ"/>
+<img alt="Compañero 2" class="inline-block h-8 w-8 rounded-full shadow-md object-cover" data-alt="Furry blue horned yeti monster smiling with sharp fangs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOPzbhhIy2r3VxlW0oSaJG1uX4AzzLZFMg3RxVRQ2YYkzaeYgmTmkoKBdmV7mlnD1D6hI-Mq2wjErweAjxvgK3Cz-s8yH9i-gAYUJSAOQIYwlHn2YODLeFErxsTKnd9NL7JG9LPvaYSZ6j9F9QkiwtDrAwDrq4_BW_ljQ9hmCJsaCzyLPQ1aLcAZRlbDBAR0ksXqqhLGUvOIEeVVwzA-5Bw6he8JiN9N2snuSTLBCFC41AjDFFMHalUg"/>
+<img alt="Compañero 3" class="inline-block h-8 w-8 rounded-full shadow-md object-cover" data-alt="Ghostly phantom wraith glowing in translucent purple light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLv5SVZPOf2PzRQx0legZJJ83B1fD3ZxF1KJ5yJgS3_UfjoNhYDYYAd74HdI1seo7D6plDYxybiE1X0DnxyTWFZgP8D2lEeWvgLAan2RG1yALQhN7VEUeP6jR03Aq4eOqLjfPiRvWIlY78GV113162uDkQFQkIW4neItMe8aqfAfSaoB9SWw7IItSBTaoA3PBPSgUf7Uc9ZpBt-xAoRlPTlr1l3sDEEUfxmAJrnNeiRItNQQB0NTKv2Q"/>
+<div class="h-8 w-8 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] font-bold text-on-surface-variant">
+              +29
+            </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Monstruos Conectados</span>
+</div>
+<!-- Action CTAs -->
+<div class="flex items-center gap-space-sm">
+<button class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full bg-surface-container-highest/80 hover:bg-surface-bright text-on-surface transition-all flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">menu_book</span>
+            Ver Temario
+          </button>
+<button class="font-label-lg text-label-lg px-space-lg py-space-xs rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-bold shadow-[0_0_20px_rgba(148,222,45,0.45)] hover:shadow-[0_0_26px_rgba(148,222,45,0.7)] transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">sensors</span>
+            Unirse al Aula Mágica
+          </button>
+</div>
+</div>
+</article>
+<!-- Card 2: Alquimia y Venenos (Next Class - 4 Cols) -->
+<article class="schedule-card lg:col-span-4 group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.55)] hover:shadow-[0_12px_40px_rgba(160,120,255,0.25)] transition-all duration-300 flex flex-col justify-between overflow-hidden" data-status="proximas">
+<div class="absolute top-0 right-0 w-36 h-36 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="p-space-lg flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/20 text-primary font-label-caps text-label-caps uppercase shadow-[0_0_10px_rgba(208,188,255,0.25)]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Próxima Clase
+          </span>
+<span class="font-label-md text-label-md text-primary bg-surface-container-lowest/70 px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">alarm</span>
+            10:30 - 12:30 PM
+          </span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+            Alquimia y Venenos
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-sm text-secondary">explore</span>
+            Mazmorra Subterránea Lab-4
+          </p>
+</div>
+<!-- Instructor Profile Snippet -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait of sorceress Morgana Rot with pale skin, venomous green potion vials in braided wild dark hair and glowing neon violet eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3MWc3m9P0SQd_jil5mw2rnK599bTAj-LmLLwvJco1PiowbCnrvRoC4jJOxs2hOJZXQgCJ3godjp_3YXeabylBQv9nkVy4PeaAGYWhAeBv_4m9zz_hOU4G-cpEpW9tkJxfKbwvGzOIjs5ViAq9I_VxtzfrL0EpKWW8QF9H3Cqq8O6rmGsv6_OP8S9C3xghE1m8NbUXAY_DcFOkiQ5kuuEQNaAXpBWtoQyW3Ovm4pK0VP56mPRl_3NpwA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Mtra. Morgana Podredumbre</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Especialista en Toxinas</span>
+</div>
+</div>
+<!-- Required Reagents Alert Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/80 flex flex-col gap-1.5">
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">science</span>
+            Materiales Requeridos para Hoy:
+          </span>
+<ul class="font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-1 pl-1">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Frasco de baba ácida sellada
+            </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              3g de polvo lunar destilado
+            </li>
+</ul>
+</div>
+</div>
+<div class="px-space-lg py-space-sm bg-surface-container-lowest/60 flex items-center justify-between gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Cupo: 18/20</span>
+<div class="flex items-center gap-space-xs">
+<button class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-colors" type="button">
+            Temario
+          </button>
+<button class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container font-semibold transition-all shadow-[0_0_12px_rgba(160,120,255,0.3)]" type="button">
+            Preparar Lab
+          </button>
+</div>
+</div>
+</article>
+<!-- Card 3: Vuelo Nocturno (Afternoon Class - 4 Cols) -->
+<article class="schedule-card lg:col-span-4 group relative rounded-xl bg-surface-container/50 backdrop-blur-2xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.45)] hover:shadow-[0_12px_36px_rgba(208,188,255,0.15)] transition-all duration-300 flex flex-col justify-between overflow-hidden" data-status="inactiva">
+<div class="p-space-lg flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-outline font-label-caps text-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            Tarde • Pendiente
+          </span>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container-lowest/60 px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+            02:00 - 04:00 PM
+          </span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+            Vuelo Nocturno
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-sm text-primary">roofing</span>
+            Azotea del Campanario Mayor
+          </p>
+</div>
+<!-- Instructor Profile Snippet -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low/60">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Anthropomorphic gargoyle-bat hybrid pilot with nocturnal leather goggles, sleek wings, and luminescent green sonar aura" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlfMnUzPmZx1Ys6QfmQEto-j40oIikVY_BsAYybkfWAvAXztYi1itUnryNzrxzt9I_ucVZmJ7LJU3Oz6jx_JVpq30KBfsJlqme66A9z45qtiFlnzT1P5GnLOyc0OvV5pIEGObohpY0kTaiTGcX1FW4qsADwoiPxdd1Ht4U90lf1MOqN8N5GUoA3b07-bs1r8lG5sE6absRMLdHWu__GK1lRBBTOuDsmlVCF8F3nv3IJNWVn0yDqDOVWg"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Cap. Murciélago Veloz</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">As de Navegación Eólica</span>
+</div>
+</div>
+<!-- Weather / Wing Conditions Metric -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/70 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">air</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Viento: 34 nudos SO</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container/20 text-secondary-fixed">
+            Apto para Alas
+          </span>
+</div>
+</div>
+<div class="px-space-lg py-space-sm bg-surface-container-lowest/60 flex items-center justify-between gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Cupo: 15/15 (Lleno)</span>
+<button class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span>
+          Ver Temario
+        </button>
+</div>
+</article>
+<!-- Card 4: Historia de Monstruos Antiguos (Evening Class - 4 Cols) -->
+<article class="schedule-card lg:col-span-4 group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.55)] hover:shadow-[0_12px_40px_rgba(160,120,255,0.2)] transition-all duration-300 flex flex-col justify-between overflow-hidden" data-status="proximas">
+<div class="p-space-lg flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/20 text-primary font-label-caps text-label-caps uppercase shadow-[0_0_10px_rgba(208,188,255,0.25)]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Próxima Clase
+          </span>
+<span class="font-label-md text-label-md text-primary bg-surface-container-lowest/70 px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+            04:30 - 06:00 PM
+          </span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+            Historia de Monstruos Antiguos
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-sm text-secondary">local_library</span>
+            Biblioteca Prohibida Salón 12
+          </p>
+</div>
+<!-- Instructor Profile Snippet -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Wise Egyptian mummy archivist wearing ceremonial purple and gold scarab amulet with glowing green eyes and ancient papyrus scrolls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2V5vkxbrDqHXdkR8TQvQa1HP6D3kTSqnl4XLrr-Y2wsAtKFInyyWnmQZiGdYNNvP9jcqK-QCAvemj6gJOEuKItgBZXcwWeP_3a8yne5cWoYkFg0QYiC0AWx1P5_t4ZUofUhjpHjzuC1m1olVtCB_Rjf_7XYHixpBrdUZ-wEo_KiFolaAVHM8Hass55Eb-WQhUAheF57oYvmGNErU_n_orDKpPVx5xe4belu-nXwnp32EvXKSqtmb58g"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sabio Momia Imhotep</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Custodio de Dinastías</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/70 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">menu_book</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Capítulo 4: El Gran Despertar del Kraken</span>
+</div>
+</div>
+<div class="px-space-lg py-space-sm bg-surface-container-lowest/60 flex items-center justify-between gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Cupo: 24/30</span>
+<div class="flex items-center gap-space-xs">
+<button class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-colors" type="button">
+            Temario
+          </button>
+<button class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant transition-colors" type="button">
+            Acceso
+          </button>
+</div>
+</div>
+</article>
+<!-- Card 5: Invisibilidad y Camuflaje (Late Class - 4 Cols) -->
+<article class="schedule-card lg:col-span-4 group relative rounded-xl bg-surface-container/60 backdrop-blur-2xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.55)] hover:shadow-[0_12px_40px_rgba(160,120,255,0.2)] transition-all duration-300 flex flex-col justify-between overflow-hidden" data-status="proximas">
+<div class="p-space-lg flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/20 text-primary font-label-caps text-label-caps uppercase shadow-[0_0_10px_rgba(208,188,255,0.25)]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Próxima Clase
+          </span>
+<span class="font-label-md text-label-md text-primary bg-surface-container-lowest/70 px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+            06:30 - 08:00 PM
+          </span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+            Invisibilidad y Camuflaje
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-sm text-secondary">visibility_off</span>
+            Sala Espejos Vacíos
+          </p>
+</div>
+<!-- Instructor Profile Snippet -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Translucent ghostly phantom professor with floating monocle and bowler hat hovering amidst faint ultraviolet mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHR2fnd6h6IVXz1rUq8AC0KmSFoKWMl_CAxcvB3LOIhl9KO1ryUbjsbiAAEHZCltgVOIkrkh9zCF4KIzET2qXyvjVegfbrfRE4nd2MmAz-gHPA5mV8GgW_faD1t2KxCMA2QF7Hz58uKaSmoZ4Sy0tUCfTQ_FkPrAdS2QqfmIrwSTGCk88J1Fz0jUb7DUnWA44xyQQBU4T7DRPXr6z9P4w0Ba23medGdkOxQF9YFDqnmwPBOyr3poINHA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Espectro Fantasmal</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Especialista en Refracción</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/70 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">warning</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed line-clamp-1">Asistencia: Requiere manto de niebla</span>
+</div>
+</div>
+<div class="px-space-lg py-space-sm bg-surface-container-lowest/60 flex items-center justify-between gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Cupo: 12/12 (Lleno)</span>
+<div class="flex items-center gap-space-xs">
+<button class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-colors" type="button">
+            Temario
+          </button>
+<button class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant transition-colors" type="button">
+            Acceso
+          </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Academic Daily Insights & Mana Meter Module -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mt-space-sm">
+<!-- Daily Mana Consumption Bar -->
+<div class="md:col-span-8 p-space-lg rounded-xl bg-surface-container/60 backdrop-blur-xl flex flex-col justify-between gap-space-md shadow-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">bolt</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Canalización de Mana del Horario</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Consumo energético estimado por tus conjuros y transformaciones de hoy</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed">680 / 1000 MP</span>
+</div>
+<!-- Mana Progress Gauge Bar -->
+<div class="w-full flex flex-col gap-1.5">
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary via-tertiary-container to-secondary transition-all duration-700 shadow-[0_0_12px_rgba(148,222,45,0.6)]" style="width: 68%;"></div>
+</div>
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant uppercase">
+<span>0 MP (Reposo en Cripta)</span>
+<span class="text-secondary-fixed">Nivel Óptimo de Espanto</span>
+<span>1000 MP (Límite Arcano)</span>
+</div>
+</div>
+</div>
+<!-- Quick Emergency Notice Card -->
+<div class="md:col-span-4 p-space-lg rounded-xl bg-surface-container/60 backdrop-blur-xl flex flex-col justify-between gap-space-sm shadow-md">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-lg">notifications_active</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Aviso de Rectoría</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+        Se recuerda a los licántropos no dejar pelos en los pupitres de la Torre B. Se cobrará multa en orbes espirituales.
+      </p>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span>Publicado hace 2 hrs</span>
+<a class="text-primary hover:underline flex items-center gap-0.5" href="#">
+          Ver avisos <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter classes behavior
+  function filterClasses(filterType, buttonEl) {
+    // Update active button styles
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+      btn.classList.remove('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+    });
+    buttonEl.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+    buttonEl.classList.add('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+
+    // Filter cards
+    const cards = document.querySelectorAll('.schedule-card');
+    cards.forEach(card => {
+      const cardStatus = card.getAttribute('data-status');
+      if (filterType === 'all' || cardStatus === filterType) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Day buttons tab switcher
+  document.querySelectorAll('.day-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.day-btn').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_rgba(160,120,255,0.4)]');
+        b.classList.add('text-on-surface-variant');
+        const pingDot = b.querySelector('.animate-ping');
+        if (pingDot) pingDot.remove();
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_rgba(160,120,255,0.4)]');
+      btn.classList.remove('text-on-surface-variant');
+      
+      const newDot = document.createElement('span');
+      newDot.className = 'w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping';
+      btn.prepend(newDot);
+    });
+  });
+</script></div></main><footer class="w-full bg-surface-container-lowest/80 backdrop-blur-lg shadow-[0_-4px_24px_rgba(0,0,0,0.4)] mt-space-3xl"><div class="max-w-[1440px] mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Academia Monstruo Logo" class="h-6 w-auto object-contain opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFDfOuTG3ekluKT42azChYoCEMYO5B5dDv4rpi3D3JG_WThhz-D05vUq4l_4ZAZcuJL8vZ6Y6SSbKz1JeWYVZKwVY_7l_57ibuHCZzSP2ipG4zmS5CJVoYuADuufvOB1hcTK7k27xiKmJQ5IV0QOnzcnkFuCi5JUg3MUQgWj1mzCnUpBB6btueB1aH3WiEe5GkJp9CRtbrN0vV6kfu1ZYlDqCQ41fLvo65NBKXyor3I1EvIOwq7QuAVw"/><span class="font-label-md text-label-md text-on-surface-variant">© 2024 Academia Monstruo de Artes Místicas y Ciencias Ocultas.</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-md text-label-md"><span class="hover:text-primary transition-colors cursor-pointer">Código de Honor Arcano</span><span class="hover:text-primary transition-colors cursor-pointer">Gremio Estudiantil</span><span class="hover:text-primary transition-colors cursor-pointer">Soporte Hechicero</span></div></div></footer></body></html>

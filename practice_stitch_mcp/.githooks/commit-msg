@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+/**
+ * .githooks/commit-msg — Git hook escrito en JavaScript (Node, sin dependencias).
+ *
+ * Evento  : `git commit`, después de escribir el mensaje y antes de crear el commit.
+ * Entrada : process.argv[2] = ruta del archivo con el mensaje (p. ej. .git/COMMIT_EDITMSG).
+ * Salida  : exit 0 = aceptar; exit 1 = rechazar. El hook PODRÍA reescribir el archivo.
+ *
+ * Regla: Conventional Commits  ->  tipo(alcance opcional): descripción
+ *   ej.: "feat(carrito): añade cupón ENVIOGRATIS"
+ */
+const fs = require("node:fs");
+
+const TIPOS = ["feat", "fix", "docs", "style", "refactor", "perf", "test", "build", "ci", "chore", "revert"];
+const REGEX = new RegExp(`^(${TIPOS.join("|")})(\\([a-z0-9-]+\\))?!?: .{5,72}$`);
+
+const archivo = process.argv[2];
+const mensaje = fs.readFileSync(archivo, "utf8");
+// Primera línea que no sea comentario (Git añade líneas con '#').
+const asunto = (mensaje.split(/\r?\n/).find((l) => l.trim() && !l.startsWith("#")) || "").trim();
+
+// Excepciones razonables: merges, reverts automáticos y fixups de rebase.
+if (/^(Merge|Revert|fixup!|squash!)/.test(asunto) || REGEX.test(asunto)) {
+  process.exit(0);
+}
+
+console.error(`\x1b[31m✖ Mensaje de commit rechazado por el hook commit-msg:\x1b[0m "${asunto}"`);
+console.error("  Formato esperado: tipo(alcance): descripción  (5–72 caracteres)");
+console.error(`  Tipos válidos: ${TIPOS.join(", ")}`);
+console.error('  Ejemplo: feat(carrito): añade cupón ENVIOGRATIS');
+process.exit(1);

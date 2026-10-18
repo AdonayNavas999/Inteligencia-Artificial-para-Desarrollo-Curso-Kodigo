@@ -1,0 +1,13 @@
+# Secretos: la clave de Stitch vive en la variable de entorno del sistema, nunca en Git
+.env
+.env.*
+!.env.example
+
+# Dependencias y build
+node_modules/
+dist/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+*.log

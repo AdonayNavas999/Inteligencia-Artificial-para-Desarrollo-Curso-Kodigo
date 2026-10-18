@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academia Monstruo Portal · Portada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09060e;
+      --surface: #16121b;
+      --surface-low: #1e1a23;
+      --surface-high: #2d2832;
+      --primary: #8b5cf6;
+      --primary-light: #d0bcff;
+      --secondary: #94de2d;
+      --text: #e8dfed;
+      --text-muted: #cbc3d7;
+      --outline: #958ea0;
+      --radius: 1rem;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.16), transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(132, 204, 22, 0.09), transparent 40%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 3.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .pill {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .4rem .9rem; border-radius: 999px;
+      background: rgba(148, 222, 45, 0.12);
+      border: 1px solid rgba(148, 222, 45, 0.35);
+      color: #b8f262;
+      font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .pill .dot { width: .55rem; height: .55rem; border-radius: 999px; background: #94de2d; box-shadow: 0 0 10px rgba(148,222,45,.8); }
+    h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.1rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #e8dfed 20%, var(--primary-light) 60%, #94de2d 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      margin-bottom: .9rem;
+    }
+    .sub {
+      max-width: 640px; margin: 0 auto;
+      color: var(--text-muted);
+      font-size: 1.02rem; line-height: 1.65;
+    }
+    .sub strong { color: var(--text); }
+    main {
+      max-width: 1100px; width: 100%;
+      margin: 0 auto; padding: 1rem 1.5rem 3rem;
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.4rem;
+    }
+    .card {
+      position: relative;
+      display: flex; flex-direction: column;
+      background: rgba(22, 18, 27, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: var(--radius);
+      overflow: hidden;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.45);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      text-decoration: none; color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(139, 92, 246, 0.45);
+      box-shadow: 0 16px 48px -8px rgba(0, 0, 0, 0.6), 0 0 24px -2px rgba(139, 92, 246, 0.25);
+    }
+    .thumb {
+      width: 100%; height: 170px;
+      overflow: hidden; position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: var(--surface-low);
+    }
+    .thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top;
+      filter: saturate(.95);
+      transition: transform .4s ease;
+    }
+    .card:hover .thumb img { transform: scale(1.04); }
+    .card .body { padding: 1.15rem 1.2rem 1.25rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+    .card .tag {
+      align-self: flex-start;
+      font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--primary-light);
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.35);
+      padding: .3rem .7rem; border-radius: 999px;
+    }
+    .card h2 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em;
+    }
+    .card p { color: var(--text-muted); font-size: .9rem; line-height: 1.55; flex: 1; }
+    .card .go {
+      display: inline-flex; align-items: center; gap: .35rem;
+      color: var(--primary-light); font-weight: 600; font-size: .9rem;
+    }
+    .card .go::after { content: "→"; transition: transform .2s ease; }
+    .card:hover .go::after { transform: translateX(4px); }
+    footer {
+      max-width: 1100px; width: 100%; margin: 0 auto;
+      padding: 1.5rem;
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      align-items: center; justify-content: space-between;
+      color: var(--text-muted); font-size: .82rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    footer .links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+    footer a { color: var(--text-muted); text-decoration: none; transition: color .2s ease; }
+    footer a:hover { color: var(--primary-light); }
+    @media (max-width: 640px) {
+      header { padding-top: 2.5rem; }
+      .card .thumb { height: 150px; }
+      footer { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="pill"><span class="dot"></span> Semestre Otoño-Invierno · Portal del Estudiante</span>
+    <h1>Academia Monstruo Portal</h1>
+    <p class="sub">
+      Bienvenido al portal de la <strong>Academia Monstruo de Artes Místicas y Ciencias Ocultas</strong>.
+      Explora el expediente de nuestros guardianes, consulta el horario arcano y revisa las calificaciones del semestre.
+    </p>
+  </header>
+
+  <main>
+    <a class="card" href="views/perfil-estudiante.html">
+      <div class="thumb"><img src="views/img/perfil-estudiante.png" alt="Captura de la vista Perfil del Estudiante de Gargolín Ramírez"></div>
+      <div class="body">
+        <span class="tag">Expedientes Arcanos</span>
+        <h2>Perfil del Estudiante</h2>
+        <p>Ficha biométrica de Gargolín Ramírez: atributos de amenaza, logros desbloqueados y tutor académico.</p>
+        <span class="go">Abrir vista</span>
+      </div>
+    </a>
+
+    <a class="card" href="views/horario-clases.html">
+      <div class="thumb"><img src="views/img/horario-clases.png" alt="Captura de la vista Horario de Clases de la Academia Monstruo"></div>
+      <div class="body">
+        <span class="tag">Horario Semanal</span>
+        <h2>Horario de Clases</h2>
+        <p>Planificación arcana de la cohorte de Artes Sombrías: materias, instructores y canalización de mana.</p>
+        <span class="go">Abrir vista</span>
+      </div>
+    </a>
+
+    <a class="card" href="views/boleta-calificaciones.html">
+      <div class="thumb"><img src="views/img/boleta-calificaciones.png" alt="Captura de la vista Boleta de Calificaciones de la Academia Monstruo"></div>
+      <div class="body">
+        <span class="tag">Expediente Académico</span>
+        <h2>Boleta de Calificaciones</h2>
+        <p>Calificaciones del semestre en la Academia Monstruo: materias, promedios y observaciones de la Rectoría.</p>
+        <span class="go">Abrir vista</span>
+      </div>
+    </a>
+  </main>
+
+  <footer>
+    <div>© 2024 Academia Monstruo de Artes Místicas y Ciencias Ocultas.</div>
+    <div class="links">
+      <a href="views/perfil-estudiante.html">Perfil del Estudiante</a>
+      <a href="views/horario-clases.html">Horario de Clases</a>
+      <a href="views/boleta-calificaciones.html">Boleta de Calificaciones</a>
+    </div>
+  </footer>
+</body>
+</html>

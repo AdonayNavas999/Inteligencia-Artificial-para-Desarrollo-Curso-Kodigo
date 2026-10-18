@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><title>Boleta de Calificaciones | Academia Monstruo</title><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#e9ddff","tertiary-fixed":"#e8ddff","on-primary-container":"#340080","on-secondary-fixed-variant":"#304f00","outline":"#958ea0","surface-container-low":"#1e1a23","outline-variant":"#494454","secondary-fixed-dim":"#91db2a","inverse-on-surface":"#332e38","primary-fixed-dim":"#d0bcff","error":"#ffb4ab","on-tertiary-fixed-variant":"#4f319c","inverse-surface":"#e8dfed","surface-container-highest":"#38333d","secondary":"#94de2d","on-tertiary":"#381385","error-container":"#93000a","on-primary-fixed-variant":"#5516be","on-secondary":"#1f3700","on-error-container":"#ffdad6","secondary-fixed":"#acf847","surface":"#16121b","primary":"#d0bcff","inverse-primary":"#6d3bd7","surface-container":"#221e27","surface-bright":"#3c3741","on-primary":"#3c0091","surface-variant":"#38333d","tertiary-container":"#9b7fed","on-surface":"#e8dfed","on-surface-variant":"#cbc3d7","tertiary-fixed-dim":"#cebdff","on-tertiary-fixed":"#21005e","on-tertiary-container":"#31057e","tertiary":"#cebdff","surface-container-lowest":"#100d15","secondary-container":"#7ac100","on-secondary-fixed":"#102000","on-primary-fixed":"#23005c","on-secondary-container":"#2c4900","primary-container":"#a078ff","on-error":"#690005","surface-container-high":"#2d2832","on-background":"#e8dfed","surface-dim":"#16121b","surface-tint":"#d0bcff","background":"#16121b"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1.5rem","gutter-sm":"1rem","space-3xl":"4.5rem","gutter":"1.5rem","space-xl":"2rem","margin":"2rem","space-md":"1rem","space-2xl":"3rem","space-xs":"0.25rem","margin-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"headline-md":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"]},fontSize:{"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"700"}],"display-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.015em","fontWeight":"800"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"600"}],"display":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface relative min-h-screen selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden"><div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[36rem] h-[36rem] rounded-full bg-primary-container/15 blur-[120px]"></div><div class="absolute top-1/3 -right-24 w-[28rem] h-[28rem] rounded-full bg-secondary-container/10 blur-[100px]"></div><div class="absolute -bottom-24 left-1/3 w-[32rem] h-[32rem] rounded-full bg-tertiary-container/10 blur-[120px]"></div></div><header class="fixed top-0 w-full z-50 bg-surface/75 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.5)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="perfil-del-estudiante" href="../index.html"><img alt="Academia Monstruo Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFDfOuTG3ekluKT42azChYoCEMYO5B5dDv4rpi3D3JG_WThhz-D05vUq4l_4ZAZcuJL8vZ6Y6SSbKz1JeWYVZKwVY_7l_57ibuHCZzSP2ipG4zmS5CJVoYuADuufvOB1hcTK7k27xiKmJQ5IV0QOnzcnkFuCi5JUg3MUQgWj1mzCnUpBB6btueB1aH3WiEe5GkJp9CRtbrN0vV6kfu1ZYlDqCQ41fLvo65NBKXyor3I1EvIOwq7QuAVw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">Academia Monstruo</span><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Portal del Estudiante</span></div></a><div class="hidden xl:flex items-center px-space-sm py-space-xs rounded-full bg-surface-container/60"><span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Semestre Otoño-Invierno 2024</span></div></div><nav class="flex flex-wrap items-center gap-space-xs bg-surface-container-low/70 px-space-xs py-space-xs rounded-full shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.06)]"><a class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all duration-200" href="../index.html">Portada</a><a class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all duration-200" href="horario-clases.html">Horario de Clases</a><a class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all duration-200" href="perfil-estudiante.html">Perfil del Estudiante</a><a aria-current="page" class="font-label-lg px-space-md py-space-sm rounded-full transition-all duration-200 bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(160,120,255,0.35)]" href="boleta-calificaciones.html">Boleta de Calificaciones</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface font-semibold">Gargolín Ramírez</span><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider flex items-center justify-end gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>Activo • Nivel 4</span></div><div class="relative p-0.5 rounded-full bg-gradient-to-tr from-primary via-surface-variant to-secondary shadow-[0_0_14px_rgba(148,222,45,0.25)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwdXNvl7-QIKCk65PVuiExHlTvaK3VpOng2JN_gFDd03EAuKPp6f8ccjyC3g-OkpscqYotAA25FgXkUC-e_hlSlXuC2LPQ3RUqgjdqNxcUfFoKITV8OW2B7YRiCpHcm8B74RyqJ2MOSjG8V9c1gHCPB8ceFa5MAJ0JwndaA0y-VJHwcNK0Q7YYRYl-PvEC7gV2_fp1cr4veDYaohZIq37s5vVQOUWoXvk6ymEOEa_46zc3boXsSIYtoQ"/></div></div></div></header><main class="w-full pt-20 bg-transparent min-h-[calc(100vh-140px)]"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="flex flex-col w-full gap-space-2xl">
+<!-- Header / Breadcrumb Context -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-primary transition-colors cursor-pointer">Portal Académico</span>
+<span>/</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Expediente Arcano</span>
+<span>/</span>
+<span class="text-secondary font-medium">Boleta de Calificaciones</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight flex items-center gap-space-sm">
+        Rendimiento Académico &amp; Boleta Oficial
+        <span class="material-symbols-outlined text-secondary text-[2rem]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Ciclo Otoño-Invierno 2024 • Matrícula: <span class="font-mono text-primary font-medium tracking-wide">GAR-9082-ALPHA</span>
+</p>
+</div>
+<!-- Quick Action Ribbon -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high/90 hover:bg-surface-container-highest text-on-surface text-label-lg font-label-lg shadow-md transition-all active:scale-95 group" id="downloadPdfBtn">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">picture_as_pdf</span>
+        Exportar PDF Encantado
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_0_20px_rgba(208,188,255,0.35)] hover:bg-primary-fixed hover:shadow-[0_0_24px_rgba(208,188,255,0.55)] transition-all active:scale-95" id="shareHonorBtn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+        Compartir en Aquelarre
+      </button>
+</div>
+</div>
+<!-- Hero Highlight Module: Cristal Líquido Superior -->
+<div class="relative w-full rounded-xl bg-surface-container/70 backdrop-blur-2xl shadow-[0_16px_40px_rgba(0,0,0,0.65)] overflow-hidden p-space-xl">
+<!-- Ethereal Mana Gradients in Card Canvas -->
+<div class="absolute -right-20 -top-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-[90px] pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-80 h-80 rounded-full bg-primary-container/20 blur-[85px] pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Big Score Stat -->
+<div class="lg:col-span-5 flex flex-col md:flex-row items-center md:items-start lg:items-center gap-space-lg text-center md:text-left">
+<!-- Giant GPA Display -->
+<div class="relative flex items-center justify-center p-space-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-md shadow-2xl">
+<div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-secondary/20 via-transparent to-primary/25 pointer-events-none"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest mb-1">Promedio General</span>
+<span class="font-display text-[5.25rem] leading-[4.75rem] font-extrabold tracking-tighter bg-gradient-to-br from-secondary via-secondary-fixed to-primary bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(148,222,45,0.45)]">
+              9.8
+            </span>
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-[0.875rem]" style="font-variation-settings: 'FILL' 1;">bolt</span> Escala Arcana 10.0
+            </span>
+</div>
+</div>
+<!-- Metric Details -->
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary/15 text-secondary text-label-caps font-label-caps uppercase tracking-wider self-center md:self-start">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            Cuadro de Honor Monstruoso • Rango Alfa
+          </div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+            Promedio General Ponderado
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            Posicionado en el <strong class="text-on-surface font-semibold">Top 3% de la Academia</strong> entre 1,420 gárgolas, licántropos y entes oscuros evaluados este semestre.
+          </p>
+</div>
+</div>
+<!-- Quick Telemetry & Academic Status Badges -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Badge 1: Créditos -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-low/80 backdrop-blur-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-[1.5rem]">school</span>
+<span class="font-label-caps text-label-caps text-primary-fixed bg-primary-container/30 px-space-xs py-0.5 rounded">96% Plan</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">48 / 50</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Créditos Aprobados</span>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mt-1">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+<!-- Badge 2: Estado Académico -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-low/80 backdrop-blur-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-[1.5rem]">workspace_premium</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed bg-secondary-container/20 px-space-xs py-0.5 rounded uppercase">Vigente</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed-dim font-semibold tracking-tight">Sobresaliente</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Estado Académico</span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Sin amonestaciones
+          </span>
+</div>
+<!-- Badge 3: Beca de Cripta -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-low/80 backdrop-blur-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-tertiary text-[1.5rem]">night_shelter</span>
+<span class="font-label-caps text-label-caps text-tertiary-fixed bg-tertiary-container/30 px-space-xs py-0.5 rounded">100% Cripta</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Beca Otorgada</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Fondo Catacumbas Mayores</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[0.875rem]">stars</span> Renovación Automática
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Gradebook Container: Tabla Translúcida de Cristal Esmerilado -->
+<div class="flex flex-col gap-space-lg">
+<!-- Filter, Search and Sub-actions Bar -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low/80 backdrop-blur-xl shadow-lg">
+<div class="flex items-center gap-space-sm flex-1 max-w-md bg-surface-container-lowest/80 px-space-md py-space-xs rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="subjectSearch" placeholder="Buscar materia, profesor o grimorio..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm overflow-x-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider hidden sm:inline">Filtrar:</span>
+<button class="filter-btn active px-space-md py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold transition-all shadow-md">Todas (5)</button>
+<button class="filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all">Magia Primordial</button>
+<button class="filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all">Sigilo &amp; Vuelo</button>
+</div>
+</div>
+<!-- Table of Subjects & Grades -->
+<div class="w-full rounded-xl bg-surface-container/60 backdrop-blur-xl shadow-[0_12px_36px_rgba(0,0,0,0.55)] overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest/60 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-space-md px-space-lg">Materia &amp; Código</th>
+<th class="py-space-md px-space-md">Docente Guía</th>
+<th class="py-space-md px-space-md text-center">Créditos</th>
+<th class="py-space-md px-space-md text-center">Calificación</th>
+<th class="py-space-md px-space-lg">Evaluación &amp; Comentario Docente</th>
+<th class="py-space-md px-space-md text-center">Estado</th>
+<th class="py-space-md px-space-lg text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="gradesTableBody">
+<!-- Row 1: Sustos 101 (Required) -->
+<tr class="subject-row group hover:bg-primary-container/10 transition-colors duration-200">
+<td class="py-space-lg px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">sentiment_very_dissatisfied</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Sustos 101</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">SUS-101 • Tronco Común</span>
+</div>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Prof. Drácula Sombra</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase">Cátedra Vampírica</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-md">10 U.C.</span>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg font-extrabold text-secondary drop-shadow-[0_0_12px_rgba(148,222,45,0.6)]">10.0</span>
+<span class="font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-bold tracking-wider mt-1">Perfecto</span>
+</div>
+</td>
+<td class="py-space-lg px-space-lg align-top max-w-md">
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+                    “Grito paralizante impecable. Capacidad de aterrorizar a aldeanos de diez.”
+                  </p>
+<span class="font-label-md text-label-md text-outline">Proyecto final: Incursión en el Castillo Sombrío</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[1rem]">check_circle</span>
+                  Aprobada
+                </span>
+</td>
+<td class="py-space-lg px-space-lg align-top text-right">
+<button class="cert-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant transition-all shadow-sm" onclick="showCertToast('Sustos 101')" title="Descargar Certificado Mágico">
+<span class="material-symbols-outlined text-[1.25rem]">workspace_premium</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Alquimia y Venenos (Required) -->
+<tr class="subject-row group bg-surface-container-lowest/30 hover:bg-primary-container/10 transition-colors duration-200">
+<td class="py-space-lg px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Alquimia y Venenos</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">ALQ-204 • Lab de Pociones</span>
+</div>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Mtra. Morgana Podredumbre</span>
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase">Herbolaria Maligna</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-md">10 U.C.</span>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg font-extrabold text-primary drop-shadow-[0_0_12px_rgba(208,188,255,0.6)]">9.5</span>
+<span class="font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-full bg-primary-container/40 text-primary font-bold tracking-wider mt-1">Excelente</span>
+</div>
+</td>
+<td class="py-space-lg px-space-lg align-top max-w-md">
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+                    “Pócimas bien balanceadas; casi derrite el caldero en el examen final pero excelente resultado.”
+                  </p>
+<span class="font-label-md text-label-md text-outline">Elaboró: Extracto de Mandrágora Épica</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[1rem]">check_circle</span>
+                  Aprobada
+                </span>
+</td>
+<td class="py-space-lg px-space-lg align-top text-right">
+<button class="cert-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant transition-all shadow-sm" onclick="showCertToast('Alquimia y Venenos')" title="Descargar Certificado Mágico">
+<span class="material-symbols-outlined text-[1.25rem]">workspace_premium</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Invisibilidad (Required) -->
+<tr class="subject-row group hover:bg-primary-container/10 transition-colors duration-200">
+<td class="py-space-lg px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">visibility_off</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Invisibilidad</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">INV-302 • Sigilo Avanzado</span>
+</div>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Espectro Fantasmal</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase">Eterología Oculta</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-md">8 U.C.</span>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg font-extrabold text-secondary drop-shadow-[0_0_12px_rgba(148,222,45,0.6)]">9.8</span>
+<span class="font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-bold tracking-wider mt-1">Sobresaliente</span>
+</div>
+</td>
+<td class="py-space-lg px-space-lg align-top max-w-md">
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+                    “Casi indetectable bajo la luna llena, postura de piedra magistral.”
+                  </p>
+<span class="font-label-md text-label-md text-outline">Prueba de mimetismo en gárgola de catedral</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[1rem]">check_circle</span>
+                  Aprobada
+                </span>
+</td>
+<td class="py-space-lg px-space-lg align-top text-right">
+<button class="cert-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant transition-all shadow-sm" onclick="showCertToast('Invisibilidad')" title="Descargar Certificado Mágico">
+<span class="material-symbols-outlined text-[1.25rem]">workspace_premium</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Vuelo Nocturno (Additional required support) -->
+<tr class="subject-row group bg-surface-container-lowest/30 hover:bg-primary-container/10 transition-colors duration-200">
+<td class="py-space-lg px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">flutter_dash</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Vuelo Nocturno</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">VUE-108 • Habilidad Física</span>
+</div>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Capitán Quimera Negra</span>
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase">Aeronáutica Alada</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-md">10 U.C.</span>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg font-extrabold text-primary drop-shadow-[0_0_12px_rgba(208,188,255,0.6)]">9.6</span>
+<span class="font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-full bg-primary-container/40 text-primary font-bold tracking-wider mt-1">Distinguido</span>
+</div>
+</td>
+<td class="py-space-lg px-space-lg align-top max-w-md">
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+                    “Maniobras evasivas en rascacielos muy ágiles. Gran estabilidad durante ráfagas de tormenta.”
+                  </p>
+<span class="font-label-md text-label-md text-outline">Calificación de planeo sostenido: 10/10</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[1rem]">check_circle</span>
+                  Aprobada
+                </span>
+</td>
+<td class="py-space-lg px-space-lg align-top text-right">
+<button class="cert-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant transition-all shadow-sm" onclick="showCertToast('Vuelo Nocturno')" title="Descargar Certificado Mágico">
+<span class="material-symbols-outlined text-[1.25rem]">workspace_premium</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Defensa Contra Cazadores (Additional required support) -->
+<tr class="subject-row group hover:bg-primary-container/10 transition-colors duration-200">
+<td class="py-space-lg px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Defensa Contra Cazadores</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">DEF-401 • Combate y Táctica</span>
+</div>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Lord Vánitas Antorcha</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase">Estrategia Defensiva</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-md">10 U.C.</span>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg font-extrabold text-secondary drop-shadow-[0_0_12px_rgba(148,222,45,0.6)]">9.9</span>
+<span class="font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-bold tracking-wider mt-1">Élite</span>
+</div>
+</td>
+<td class="py-space-lg px-space-lg align-top max-w-md">
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+                    “Tácticas de emboscada ejemplares. Desactivó tres trampas de plata sin emitir ruido alguno.”
+                  </p>
+<span class="font-label-md text-label-md text-outline">Simulación en bosque brumoso completada</span>
+</div>
+</td>
+<td class="py-space-lg px-space-md align-top text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[1rem]">check_circle</span>
+                  Aprobada
+                </span>
+</td>
+<td class="py-space-lg px-space-lg align-top text-right">
+<button class="cert-btn p-2 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant transition-all shadow-sm" onclick="showCertToast('Defensa Contra Cazadores')" title="Descargar Certificado Mágico">
+<span class="material-symbols-outlined text-[1.25rem]">workspace_premium</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footer Summary inside the Glass Table Container -->
+<div class="p-space-lg bg-surface-container-lowest/80 flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Documento firmado con runa criptográfica <strong class="text-on-surface">#SHA-666-ARCANA</strong> por el Decanato de Monstruología.
+          </span>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-xs text-primary hover:text-primary-fixed font-label-md text-label-md font-semibold transition-colors" id="batchDownloadBtn">
+<span class="material-symbols-outlined text-[1.125rem]">folder_zip</span>
+            Descargar Todos los Certificados (.zip encantado)
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Academic Guild Badge & Honor Showcase Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-stretch">
+<!-- Emblem Showcase Card -->
+<div class="relative rounded-xl bg-surface-container/60 backdrop-blur-xl p-space-xl flex flex-col items-center text-center justify-center overflow-hidden shadow-xl">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent pointer-events-none"></div>
+<!-- Visual Crest Inspired by Academy Shield -->
+<div class="relative w-36 h-36 mb-space-md flex items-center justify-center p-2 rounded-2xl bg-surface-container-lowest/90 shadow-[0_0_30px_rgba(160,120,255,0.25)]">
+<div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-secondary/30 via-primary/20 to-transparent"></div>
+<img class="w-full h-full object-contain relative z-10 drop-shadow-[0_0_15px_rgba(148,222,45,0.4)]" data-alt="Official Monster Academy collegiate emblem crest in dark gothic fantasy style, featuring gargoyle wings, horned crest, glowing neon green eyes and purple heraldic banner ribbons with neon ambient illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVBSTAOFbRDS3jqFEYbVbuyRoyKP6z7mupEsnEJDDaXCEpUcD66M2eTnnWRj081d0o4QTO2jB3zBbbhAyg9m6Ef-D1-MOSHGBAirP5bvCVae7LY0HIcPVzSTlsJPM7rUiujLDsdB3XyRHDzrBdMWdub0hpJHjqTYPUr8I3xxCIOJbRZUPSGgpR0ujMrRf82e-y6fJyfs38avoUPL6JEUCaVtz_Z7kmuUzyACCsF4MxzZVgV0InMwe5dg"/>
+</div>
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-widest mb-1">Gremio de Gárgolas Nobles</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Mención Honorífica de la Cripta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 max-w-xs">
+        Otorgada únicamente a educandos con promedio superior a 9.5 y asistencia del 100% en vigilias de media noche.
+      </p>
+</div>
+<!-- Statistical Breakdown Chart / Arcane Meter -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-space-xl flex flex-col justify-between shadow-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Desglose de Competencias</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Dominio de Habilidades</h4>
+</div>
+<span class="material-symbols-outlined text-outline">equalizer</span>
+</div>
+<div class="flex flex-col gap-space-md my-space-xs">
+<div>
+<div class="flex justify-between text-body-sm font-body-sm mb-1">
+<span class="text-on-surface">Capacidad de Espanto y Pánico</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full shadow-[0_0_8px_rgba(148,222,45,0.7)]" style="width: 100%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm font-body-sm mb-1">
+<span class="text-on-surface">Manipulación de Filtros &amp; Pócimas</span>
+<span class="text-primary font-semibold">95%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full shadow-[0_0_8px_rgba(208,188,255,0.7)]" style="width: 95%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm font-body-sm mb-1">
+<span class="text-on-surface">Mimetismo de Piedra &amp; Éter</span>
+<span class="text-secondary font-semibold">98%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-fixed rounded-full shadow-[0_0_8px_rgba(172,248,71,0.7)]" style="width: 98%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm font-body-sm mb-1">
+<span class="text-on-surface">Combate y Supervivencia Urbana</span>
+<span class="text-primary-fixed font-semibold">99%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full shadow-[0_0_8px_rgba(160,120,255,0.7)]" style="width: 99%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span>Evaluador: Consejo Superior</span>
+<span class="text-secondary flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Auditoría Aprobada
+        </span>
+</div>
+</div>
+<!-- Cryptic Faculty Testimonials / Advisory Board Card -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-space-xl flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider">Acreditación Magisterial</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Veredicto del Claustro</h4>
+</div>
+<div class="relative p-space-md rounded-lg bg-surface-container-lowest/70 backdrop-blur-md shadow-inner flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-[2rem] opacity-40 absolute top-2 right-2">format_quote</span>
+<p class="font-body-sm text-body-sm text-on-surface italic relative z-10 leading-relaxed">
+          “Gargolín Ramírez personifica la cumbre del linaje de gárgolas. Su temple pétreo ante el peligro y su meticulosidad en las artes tóxicas lo posicionan para la Orden de Titanes.”
+        </p>
+<div class="flex items-center gap-space-sm mt-2 pt-2 border-t border-outline-variant/30">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline-sm text-xs font-bold">
+            DR
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Decano Vlad Dracula</span>
+<span class="font-label-caps text-label-caps text-outline">Presidente del Senado Arcano</span>
+</div>
+</div>
+</div>
+<!-- Action -->
+<button class="w-full mt-space-md py-space-sm px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[1.125rem]">history_edu</span>
+        Solicitar Carta de Recomendación
+      </button>
+</div>
+</div>
+<!-- Notification Toast Modal Container (Dynamic micro-interactions) -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-lg py-space-md rounded-xl bg-surface-container-highest/95 backdrop-blur-2xl shadow-[0_12px_36px_rgba(0,0,0,0.8)] border border-primary/30 text-on-surface" id="toastNotification">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold" id="toastTitle">Acción Completada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="toastMsg">El pergamino fue generado exitosamente.</span>
+</div>
+</div>
+</div>
+<script>
+  // Filter Functionality for Grades
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const subjectRows = document.querySelectorAll('.subject-row');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-md');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-md');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      const filterType = btn.textContent.trim().toLowerCase();
+      subjectRows.forEach(row => {
+        if (filterType.includes('todas')) {
+          row.style.display = '';
+        } else if (filterType.includes('magia')) {
+          const isMagic = row.innerText.includes('Alquimia') || row.innerText.includes('Sustos');
+          row.style.display = isMagic ? '' : 'none';
+        } else if (filterType.includes('sigilo')) {
+          const isStealth = row.innerText.includes('Invisibilidad') || row.innerText.includes('Vuelo') || row.innerText.includes('Defensa');
+          row.style.display = isStealth ? '' : 'none';
+        }
+      });
+    });
+  });
+
+  // Search in subjects table
+  const searchInput = document.getElementById('subjectSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      subjectRows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  }
+
+  // Toast Trigger Helper
+  function showCertToast(subject) {
+    const toast = document.getElementById('toastNotification');
+    const title = document.getElementById('toastTitle');
+    const msg = document.getElementById('toastMsg');
+    
+    title.textContent = "Certificado Conjurado";
+    msg.textContent = `Descargando constancia mística de '${subject}' con sello alfa.`;
+    
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  // PDF Export Trigger
+  document.getElementById('downloadPdfBtn')?.addEventListener('click', () => {
+    const toast = document.getElementById('toastNotification');
+    const title = document.getElementById('toastTitle');
+    const msg = document.getElementById('toastMsg');
+    
+    title.textContent = "PDF Encantado";
+    msg.textContent = "Generando boleta mágica oficial con marcas de agua espectrales...";
+    
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  });
+
+  // Batch download
+  document.getElementById('batchDownloadBtn')?.addEventListener('click', () => {
+    showCertToast('Todas las Materias Aprobadas');
+  });
+
+  // Aquelarre share
+  document.getElementById('shareHonorBtn')?.addEventListener('click', () => {
+    const toast = document.getElementById('toastNotification');
+    const title = document.getElementById('toastTitle');
+    const msg = document.getElementById('toastMsg');
+    
+    title.textContent = "Runa de Honor Emitida";
+    msg.textContent = "Enlace de mérito transmitido a la red de gárgolas y catacumbas.";
+    
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3000);
+  });
+</script></div></main><footer class="w-full bg-surface-container-lowest/80 backdrop-blur-lg shadow-[0_-4px_24px_rgba(0,0,0,0.4)] mt-space-3xl"><div class="max-w-[1440px] mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Academia Monstruo Logo" class="h-6 w-auto object-contain opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFDfOuTG3ekluKT42azChYoCEMYO5B5dDv4rpi3D3JG_WThhz-D05vUq4l_4ZAZcuJL8vZ6Y6SSbKz1JeWYVZKwVY_7l_57ibuHCZzSP2ipG4zmS5CJVoYuADuufvOB1hcTK7k27xiKmJQ5IV0QOnzcnkFuCi5JUg3MUQgWj1mzCnUpBB6btueB1aH3WiEe5GkJp9CRtbrN0vV6kfu1ZYlDqCQ41fLvo65NBKXyor3I1EvIOwq7QuAVw"/><span class="font-label-md text-label-md text-on-surface-variant">© 2024 Academia Monstruo de Artes Místicas y Ciencias Ocultas.</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-md text-label-md"><span class="hover:text-primary transition-colors cursor-pointer">Código de Honor Arcano</span><span class="hover:text-primary transition-colors cursor-pointer">Gremio Estudiantil</span><span class="hover:text-primary transition-colors cursor-pointer">Soporte Hechicero</span></div></div></footer></body></html>
